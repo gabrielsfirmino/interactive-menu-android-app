@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFC1C1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gabrielsfirmino.interactive_menu_android_app.MenuActivity">
+
+    <TextView
+        android:id="@+id/menuList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="#FF6A6A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

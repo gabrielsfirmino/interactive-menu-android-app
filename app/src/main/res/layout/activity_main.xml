@@ -15,33 +15,47 @@
         android:layout_marginTop="20dp"/>
 
     <Button
+        android:id="@+id/btscan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF6A6A"
-        android:text="Ler cardápio"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#FF6A6A"
+        android:text="Capturar cardápio"
+        android:textColor="#FFFFFF"
+        android:onClick="goToScan"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FF6A6A"
+        android:text="Consultar cardápios"
+        android:textColor="#FFFFFF" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
         android:text="Português - Brasil"
         android:textColor="#FF6A6A"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:textStyle="bold" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
         android:text="Inglês"
         android:textColor="#FF6A6A"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
