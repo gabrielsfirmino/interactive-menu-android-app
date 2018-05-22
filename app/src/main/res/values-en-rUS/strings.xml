@@ -10,4 +10,6 @@
 
     <string name="rdbutton_pt">Portuguese - Brazil</string>
     <string name="rdbutton_us">English - USA</string>
+
+    <string name="scan_prompt">Scan QR Code</string>
 </resources>

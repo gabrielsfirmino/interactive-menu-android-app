@@ -14,4 +14,6 @@
     <string name="rdbutton_n">Não</string>
 
     <string name="txv_save">Salvar cardápio?</string>
+
+    <string name="scan_prompt">Digitalizar o QR Code</string>
 </resources>

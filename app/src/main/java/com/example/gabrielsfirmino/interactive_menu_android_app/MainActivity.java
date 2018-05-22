@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton pt = (RadioButton) findViewById(R.id.rdgroupptbr);
         RadioButton us = (RadioButton) findViewById(R.id.rdgroupus);
 
-        if (pt.getText() != "Portuguese - Brazil") {
+        if (pt.getText().toString().equals("Portuguese - Brazil")) {
             us.setChecked(true);
         }
         else {
