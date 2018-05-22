@@ -22,7 +22,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="50dp"
         android:background="#FF6A6A"
-        android:text="Capturar cardápio"
+        android:text="@string/button_scan"
         android:textColor="#FFFFFF"
         android:onClick="goToScan"/>
 
@@ -33,29 +33,40 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="15dp"
         android:background="#FF6A6A"
-        android:text="Consultar cardápios"
-        android:textColor="#FFFFFF" />
+        android:text="@string/button_list"
+        android:textColor="#FFFFFF"
+        android:onClick="goToMenus"/>
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="25dp"
-        android:text="Português - Brasil"
-        android:textColor="#FF6A6A"
-        android:textStyle="bold" />
+        android:id="@+id/rdgroup_1">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="5dp"
-        android:text="Inglês"
-        android:textColor="#FF6A6A"
-        android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/rdgroupptbr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:enabled="false"
+            android:text="@string/rdbutton_pt"
+            android:textColor="#FF6A6A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdgroupus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:text="@string/rdbutton_us"
+            android:textColor="#FF6A6A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RadioGroup>
 
 </LinearLayout>

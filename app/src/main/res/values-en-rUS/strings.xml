@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Interactive Menu</string>
+
+    <string name="layout_home">Interactive Menu - Home</string>
+    <string name="layout_scan">Interactive Menu - Menu</string>
+
+    <string name="button_scan">Scan menu</string>
+    <string name="button_list">List menus</string>
+
+    <string name="rdbutton_pt">Portuguese - Brazil</string>
+    <string name="rdbutton_us">English - USA</string>
+</resources>

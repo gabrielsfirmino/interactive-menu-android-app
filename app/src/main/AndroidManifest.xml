@@ -8,14 +8,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:label="Menu Interativo - Inicio">
+        <activity android:name=".MainActivity" android:label="@string/layout_home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity" android:label="Menu Interativo - Cardápio"></activity>
+        <activity android:name=".MenuActivity" android:label="@string/layout_scan"></activity>
+        <activity android:name=".ListActivity" android:label="@string/layout_list"></activity>
     </application>
 
 </manifest>

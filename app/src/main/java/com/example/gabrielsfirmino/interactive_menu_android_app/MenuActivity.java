@@ -2,9 +2,12 @@ package com.example.gabrielsfirmino.interactive_menu_android_app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,6 +15,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class MenuActivity extends AppCompatActivity {
+    private static final String PREF = "MenuList";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,38 @@ public class MenuActivity extends AppCompatActivity {
     public void printMenu(String menu) {
         TextView menuList = (TextView) findViewById(R.id.menuList);
 
+        String[] linhas = menu.split("\\r\\n|\\r|\\n", -1);
+        for (int i = 0; i < linhas.length; i++) {
+            Toast.makeText(this, linhas[i], Toast.LENGTH_SHORT).show();
+        }
+
         menuList.setText(menu);
+    }
+
+    public void selectRadio(View v) {
+        SharedPreferences menus_list = getSharedPreferences(PREF, MODE_PRIVATE);
+
+        RadioButton rdy = (RadioButton) findViewById(R.id.rdy);
+        RadioButton rdn = (RadioButton) findViewById(R.id.rdn);
+        TextView menuList = (TextView) findViewById(R.id.menuList);
+
+        Intent i = new Intent(this, MainActivity.class);
+
+        String[] linhas = menuList.getText().toString().split("\\r\\n|\\r|\\n", -1);
+
+        if (rdy.isChecked()) {
+            SharedPreferences.Editor edit = menus_list.edit();
+            edit.putString(linhas[0], menuList.getText().toString());
+            edit.commit();
+            Toast.makeText(this, "O cardápio foi salvo, acesse CONSULTAR CARDÁPIOS para vê-lo novamente.", Toast.LENGTH_SHORT).show();
+            startActivity(i);
+            finish();
+        }
+
+        if (rdn.isChecked()) {
+            Toast.makeText(this, "O cardápio não foi salvo, acesse CAPTURAR CARDÁPIO para escaneá-lo novamente.", Toast.LENGTH_SHORT).show();
+            startActivity(i);
+            finish();
+        }
     }
 }

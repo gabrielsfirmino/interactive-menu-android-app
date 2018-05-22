@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Menu Interativo</string>
+
+    <string name="layout_home">Menu Interativo - Início</string>
+    <string name="layout_scan">Menu Interativo - Cardápio</string>
+    <string name="layout_list">Menu Interativo - Listar Cardápios></string>
+
+    <string name="button_scan">Capturar cardápio</string>
+    <string name="button_list">Consultar cardápios</string>
+
+    <string name="rdbutton_pt">Português - Brasil</string>
+    <string name="rdbutton_us">Inglês - EUA</string>
+    <string name="rdbutton_y">Sim</string>
+    <string name="rdbutton_n">Não</string>
+
+    <string name="txv_save">Salvar cardápio?</string>
 </resources>

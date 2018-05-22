@@ -10,9 +10,55 @@
     <TextView
         android:id="@+id/menuList"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="423dp"
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="#FF6A6A"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txv_save"
+            android:textColor="#FF6A6A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="-45dp"/>
+
+            <RadioButton
+                android:id="@+id/rdy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/rdbutton_y"
+                android:textColor="#FF6A6A"
+                android:textStyle="bold"
+                android:onClick="selectRadio"/>
+
+            <RadioButton
+                android:id="@+id/rdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-120dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/rdbutton_n"
+                android:textColor="#FF6A6A"
+                android:textStyle="bold"
+                android:onClick="selectRadio"/>
+    </LinearLayout>
+
 </LinearLayout>
