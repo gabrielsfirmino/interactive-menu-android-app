@@ -54,9 +54,6 @@ public class MenuActivity extends AppCompatActivity {
         TextView menuList = (TextView) findViewById(R.id.menuList);
 
         String[] linhas = menu.split("\\r\\n|\\r|\\n", -1);
-        for (int i = 0; i < linhas.length; i++) {
-            Toast.makeText(this, linhas[i], Toast.LENGTH_SHORT).show();
-        }
 
         menuList.setText(menu);
     }
