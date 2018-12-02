@@ -4,12 +4,19 @@
 
     <string name="layout_home">Interactive Menu - Home</string>
     <string name="layout_scan">Interactive Menu - Menu</string>
+    <string name="layout_list">Interactive Menu - List Menus</string>
 
     <string name="button_scan">Scan menu</string>
     <string name="button_list">List menus</string>
 
     <string name="rdbutton_pt">Portuguese - Brazil</string>
     <string name="rdbutton_us">English - USA</string>
+    <string name="rdbutton_y">Yes</string>
+    <string name="rdbutton_n">No</string>
 
-    <string name="scan_prompt">Scan QR Code</string>
+    <string name="txv_save">Save menu?</string>
+
+    <string name="menu_saved">The menu has been saved, access LIST MENUS to see it again.</string>
+    <string name="menu_nsaved">The menu has not been saved, access SCAN MENU to scan it again.</string>
+    <string name="menu_invalid">The menu has not been scanned or is invalid, return to the beginning to scan again.</string>
 </resources>

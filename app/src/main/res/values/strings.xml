@@ -3,7 +3,7 @@
 
     <string name="layout_home">Menu Interativo - Início</string>
     <string name="layout_scan">Menu Interativo - Cardápio</string>
-    <string name="layout_list">Menu Interativo - Listar Cardápios></string>
+    <string name="layout_list">Menu Interativo - Listar Cardápios</string>
 
     <string name="button_scan">Capturar cardápio</string>
     <string name="button_list">Consultar cardápios</string>
@@ -15,5 +15,7 @@
 
     <string name="txv_save">Salvar cardápio?</string>
 
-    <string name="scan_prompt">Digitalizar o QR Code</string>
+    <string name="menu_saved">O cardápio foi salvo, acesse CONSULTAR CARDÁPIOS para vê-lo novamente.</string>
+    <string name="menu_nsaved">O cardápio não foi salvo, acesse CAPTURAR CARDÁPIO para escaneá-lo novamente.</string>
+    <string name="menu_invalid">O cardápio não foi digitalizado ou é inválido, retorne ao início para escaneá-lo novamente.</string>
 </resources>

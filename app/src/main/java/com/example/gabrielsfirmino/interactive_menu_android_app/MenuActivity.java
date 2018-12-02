@@ -31,7 +31,6 @@ public class MenuActivity extends AppCompatActivity {
         IntentIntegrator integrator = new IntentIntegrator(scanActivity);
 
         integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-        integrator.setPrompt("Capture o QR Code");
         integrator.setCameraId(0);
         integrator.initiateScan();
     }
@@ -46,8 +45,10 @@ public class MenuActivity extends AppCompatActivity {
             }
         }
         else {
+            Toast.makeText(this, R.string.menu_invalid, Toast.LENGTH_SHORT).show();
             super.onActivityResult(requestCode, resultCode, data);
         }
+
     }
 
     public void printMenu(String menu) {
@@ -73,13 +74,13 @@ public class MenuActivity extends AppCompatActivity {
             SharedPreferences.Editor edit = menus_list.edit();
             edit.putString(linhas[0], menuList.getText().toString());
             edit.commit();
-            Toast.makeText(this, "O cardápio foi salvo, acesse CONSULTAR CARDÁPIOS para vê-lo novamente.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.menu_saved, Toast.LENGTH_SHORT).show();
             startActivity(i);
             finish();
         }
 
         if (rdn.isChecked()) {
-            Toast.makeText(this, "O cardápio não foi salvo, acesse CAPTURAR CARDÁPIO para escaneá-lo novamente.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.menu_nsaved, Toast.LENGTH_SHORT).show();
             startActivity(i);
             finish();
         }
